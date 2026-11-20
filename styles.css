@@ -220,3 +220,31 @@
     box-sizing: border-box;
   }
 }
+
+/* MAKE BOOK QT STAND OUT */
+.nav-links .nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px 25px;
+  background: #c77aff;
+  color: #100719 !important;
+  border: 1px solid #e2baff;
+  border-radius: 4px;
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  box-shadow: 0 0 20px rgba(199, 122, 255, .35);
+  transition: all .3s ease;
+}
+
+.nav-links .nav-cta:hover {
+  background: #e4c1ff;
+  box-shadow: 0 0 35px rgba(199, 122, 255, .65);
+  transform: translateY(-3px);
+}
+
+.nav-links .nav-cta span {
+  font-size: 20px;
+}
