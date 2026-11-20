@@ -248,3 +248,53 @@
 .nav-links .nav-cta span {
   font-size: 20px;
 }
+
+/* ALWAYS VISIBLE TOP BOOKING BUTTON */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.top-book-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px 24px;
+  background: linear-gradient(110deg, #a855f7, #d946ef);
+  color: #fff;
+  border: 1px solid #e2baff;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  box-shadow: 0 0 25px rgba(168,85,247,.4);
+  transition: .3s ease;
+}
+
+.top-book-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 40px rgba(217,70,239,.65);
+  background: #c77aff;
+}
+
+.top-book-btn span {
+  font-size: 20px;
+}
+
+@media(max-width:680px) {
+  .header-actions {
+    margin-left: auto;
+    gap: 12px;
+  }
+
+  .top-book-btn {
+    padding: 12px 15px;
+    font-size: 10px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
