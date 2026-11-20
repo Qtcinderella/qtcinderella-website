@@ -4,3 +4,42 @@
 @media(max-width:900px){.hero{padding-inline:7vw;grid-template-columns:1fr  .8fr}.hero h1{font-size:clamp(55px,8vw,80px);letter-spacing:-5px}.hero-visual{height:440px}.portrait-frame{height:390px;width:85%}.nav-links{gap:18px}.world-cards{gap:10px}.card-art{height:210px}.art-word{font-size:38px}.section,.world-section,.media-section{padding-inline:7vw}}
 @media(max-width:680px){.site-header{height:70px;padding-inline:6vw}.menu-toggle{display:flex;flex-direction:column;gap:6px;padding:10px}.menu-toggle i{width:23px;height:1px;background:#fff;display:block}.nav-links{display:none;position:absolute;top:69px;left:0;width:100%;padding:25px 7vw 30px;background:rgba(9,7,15,.97);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:22px}.nav-links.open{display:flex}.hero{height:auto;min-height:900px;max-height:none;display:flex;flex-direction:column;align-items:flex-start;padding:150px 7vw 95px}.hero h1{font-size:clamp(55px,15vw,84px);letter-spacing:-5px;margin-top:25px}.hero-intro{font-size:12px}.hero-visual{width:100%;height:400px;margin-top:28px}.portrait-frame{width:70%;height:350px}.placeholder-mark{font-size:85px}.orbit-a{width:350px;height:140px}.orbit-b{width:390px;height:180px}.tag-top{top:25px;right:2px}.tag-bottom{bottom:25px;left:0}.hero-meta{margin-top:40px;flex-wrap:wrap}.scroll-cue{left:7vw;bottom:28px}.section,.world-section,.media-section{padding:85px 7vw}.about-layout{grid-template-columns:1fr;gap:28px;margin:48px 0}.about-heading h2,.world-intro h2,.projects-heading h2,.media-heading h2{font-size:clamp(48px,13vw,68px);letter-spacing:-4px}.large-copy{font-size:21px}.about-strip{gap:12px}.about-strip div{padding-left:12px}.about-strip strong{font-size:17px}.about-strip span{font-size:7px;letter-spacing:.8px}.world-intro,.projects-heading,.media-heading{display:block;margin:45px 0 35px}.world-intro p,.projects-heading p,.media-heading p{margin-top:20px}.world-cards{grid-template-columns:1fr;gap:14px}.card-art{height:230px}.project-row{grid-template-columns:28px 1fr 25px;gap:10px;padding:22px 0}.project-title{font-size:18px}.project-desc{grid-column:2;grid-row:2;font-size:10px}.project-arrow{grid-column:3;grid-row:1/3}.media-grid{grid-template-columns:1fr 1fr;grid-template-rows:210px 160px}.tile-large{grid-row:span 2}.media-placeholder span{font-size:8px;text-align:center}.booking-section{padding:90px 7vw 120px;min-height:580px}.booking-content{margin-top:60px}.booking-content h2{font-size:clamp(65px,18vw,95px);letter-spacing:-5px}.booking-side-note{right:7vw;bottom:25px;font-size:8px}.footer-top{gap:15px;flex-wrap:wrap}.footer-top p{order:3;width:100%}.footer-bottom{align-items:flex-start;gap:22px;flex-direction:column}.social-links{gap:14px}.cursor-glow{display:none}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+/* QTCINDERELLA IMAGE FIX */
+
+.portrait-placeholder {
+  overflow: hidden;
+  position: relative;
+}
+
+.portrait-placeholder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.media-placeholder {
+  overflow: hidden;
+  position: relative;
+}
+
+.media-placeholder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.media-placeholder:before {
+  z-index: 2;
+  pointer-events: none;
+}
+
+.media-placeholder b {
+  z-index: 3;
+}
