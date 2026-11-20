@@ -316,3 +316,45 @@
   transform: translateY(-4px);
   box-shadow: 0 0 40px rgba(255,79,216,.5);
 }
+
+/* PREMIUM HERO BOOK NOW BUTTON */
+.hero-actions .button-book-now {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 17px 25px;
+  min-height: 52px;
+  background: linear-gradient(110deg, #d946ef, #a855f7, #7c3aed);
+  color: #fff !important;
+  border: 1px solid #e5b5ff;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  box-shadow:
+    0 0 18px rgba(168,85,247,.45),
+    0 0 35px rgba(217,70,239,.2);
+  transition: all .3s ease;
+}
+
+.hero-actions .button-book-now span {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.hero-actions .button-book-now:hover {
+  transform: translateY(-5px) scale(1.03);
+  background: linear-gradient(110deg, #e879f9, #c084fc);
+  box-shadow:
+    0 0 25px rgba(217,70,239,.65),
+    0 0 50px rgba(168,85,247,.35);
+}
+
+@media(max-width:680px) {
+  .hero-actions .button-book-now {
+    padding: 17px 20px;
+    font-size: 10px;
+  }
+}
